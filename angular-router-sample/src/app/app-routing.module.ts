@@ -7,6 +7,7 @@ const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot([
+    { path: '', redirectTo: '/heroes-list', pathMatch: 'full'},
     { path: 'crisis-list', component: CrisisListComponent },
     { path: 'heroes-list', component: HeroesListComponent },
   ])],
