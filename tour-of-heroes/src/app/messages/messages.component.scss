@@ -1,0 +1,21 @@
+@import '../app.component.scss';
+
+h2 {
+    color: #a80000;
+    @include sans-serif();
+    font-weight: lighter;
+}
+
+.clear {
+    color: #333;
+    background-color: #eee;
+    margin-bottom: 12px;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    &:hover {
+        color: white;
+        background-color: #555;
+        cursor: pointer;
+    }
+}
