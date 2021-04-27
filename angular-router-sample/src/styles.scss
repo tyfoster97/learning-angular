@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin sans-serif() {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin button-defaults() {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    outline: 0;
+    display: inline-block;
+}
+
+@mixin nav-button-defaults() {
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 6px 24px;
+    margin-right: 10px;
+}
+
+@mixin button() {
+    @include button-defaults();
+    @include nav-button-defaults();
+    @include sans-serif();
+    box-shadow: inset 0 1px 0 0 azure;
+    background-color: azure;
+    border: 1px solid #666;
+    color: #666;
+    text-shadow: 0 1px 0 #fff;
+
+    &:hover {
+        box-shadow: inset 1px 0 0 teal;
+        background-color: darkcyan;
+        border: 1px solid #aaa;
+        color: #aaa;
+        text-shadow: 0 1px 0 teal;
+    }
+}
+
+@mixin active-button() {
+    @include button-defaults();
+    @include nav-button-defaults();
+    @include sans-serif();
+    box-shadow: inset 1px 0 0 powderblue;
+    background-color: lightskyblue;
+    border: 1px solid #666;
+    color: #666;
+    text-shadow: 0 1px 0 powderblue;
+}

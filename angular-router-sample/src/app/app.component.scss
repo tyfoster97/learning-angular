@@ -1,0 +1,8 @@
+@import '../styles.scss';
+
+.button {
+    @include button();
+}
+.activebutton {
+    @include active-button();
+}
