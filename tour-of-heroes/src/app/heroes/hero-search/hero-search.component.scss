@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+ul {
+    list-style: none;
+}
+
+a {
+    @include btn-default();
+    @include form-btn();
+}

@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+@mixin a-padding() {
+  padding: 10px 0;
+}
+ul {
+  list-style-type: none;
+}
+.heroes li {
+  @include btn-default();
+  border-radius: 5px;
+  color: #e5e5e5;
+  display: grid;
+  grid-template-columns: auto 10%;
+  width: 15em;
+}
+.heroes .badge {
+  background-color: #444;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  font-weight: normal;
+  padding: .6rem 5px;
+  padding-bottom: 11px;
+  margin-right: 5px;
+}
+.heroes a {
+  @include sans-serif();
+  @include a-padding();
+  color: #555;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    color: #eee;
+    left: .1em;
+  }
+}
+button {
+  @include btn-default();
+  @include form-btn();
+}
+.delete {
+  background-color: #e5e5e5;
+  margin: 0.3rem;
+  padding: .2rem 0;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    background-color: #900;
+    color: #eee;
+  }
+}

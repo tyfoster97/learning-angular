@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin btn-default() {
+    background-color: #e5e5e5;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0.3rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #333;
+        color: #e5e5e5;
+    }
+}
+
+@mixin form-btn() {
+    border-radius: 2px;
+    font-size: 14px;
+    padding: .2rem .4rem;
+}
+
+@mixin sans-serif() {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin serif() {
+    font-family: Cambria, Georgia, serif;
+}
+
+@mixin nav-btn() {
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .2rem 1rem;
+}
+
+h1 {
+    @include sans-serif();
+    color: #369;
+    font-size: 250%;
+}
+
+h2, h3 {
+    @include sans-serif();
+    color: #444;
+    font-weight: lighter;
+}
+
+input[type='text'], button {
+    @include serif();
+}
+
+body {
+    @include sans-serif();
+    color: #555;
+    margin: 2em;
+}

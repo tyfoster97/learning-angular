@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.hero-name {
+    padding: .5rem;
+}
+
+button {
+    @include btn-default();
+    @include form-btn();
+}
